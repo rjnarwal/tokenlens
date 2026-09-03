@@ -121,13 +121,16 @@ export const Navbar: React.FC<NavbarProps> = ({
             <span className="sm:hidden">Diff</span>
           </button>
 
-          <button
-            onClick={onOpenHistory}
-            className="flex items-center space-x-1.5 px-3 py-1.5 rounded-xl bg-background-tertiary hover:bg-background-elevated border border-border text-xs font-semibold text-text-secondary hover:text-text-primary transition-colors"
+          <a
+            href="https://github.com/rjnarwal/tokenlens/releases"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center space-x-1.5 px-3 py-1.5 rounded-xl bg-purple-500/15 hover:bg-purple-500/25 border border-purple-500/40 text-xs font-semibold text-purple-400 transition-colors shadow-sm"
+            title="Download TokenLens Native Desktop App (Mac / Windows / Linux)"
           >
-            <History className="w-3.5 h-3.5 text-emerald-400" />
-            <span className="hidden sm:inline">History</span>
-          </button>
+            <span className="hidden sm:inline">Desktop App ▾</span>
+            <span className="sm:hidden">App ▾</span>
+          </a>
 
           {/* 3-Pill Theme Switcher matching Grassroot Ecosystem */}
           <div className="flex items-center bg-background-tertiary/80 border border-border rounded-xl p-0.5 ml-1">
