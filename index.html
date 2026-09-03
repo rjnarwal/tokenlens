@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238b5cf6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='10'/><path d='m10 15 5-3-5-3v6Z'/></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0d14" />
+
+    <!-- Primary SEO Title & Search Metadata -->
+    <title>TokenLens | 100% Client-Side JWT Decoder, RS256/HS256 Verifier & Claim Inspector</title>
+    <meta name="title" content="TokenLens | 100% Client-Side JWT Decoder, RS256/HS256 Verifier & Claim Inspector" />
+    <meta name="description" content="TokenLens is a secure, privacy-first JWT Debugger and Inspector. Decode JSON Web Tokens, inspect expiration countdowns in real-time, verify and sign HS256, RS256, and ES256 signatures with native WebCrypto in your browser memory." />
+    <meta name="keywords" content="JWT decoder, JSON Web Token decoder, JWT debugger, verify RS256 signature, verify HS256, verify ES256, WebCrypto JWT verifier, JWT expiration countdown, JWT diff tool, decode JWT offline, zero cloud JWT debugger, TokenLens, Grassroot Digital, OAuth2 debugger, OpenID Connect token inspector" />
+    <meta name="author" content="Rajesh Narwal" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://tokenlens.grassroot.digital/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tokenlens.grassroot.digital/" />
+    <meta property="og:site_name" content="TokenLens" />
+    <meta property="og:title" content="TokenLens | 100% Client-Side JWT Decoder & WebCrypto Verifier" />
+    <meta property="og:description" content="Secure, zero-leak JWT Decoder and Claim Inspector. Verify HMAC, RSA, and ECDSA signatures locally in your browser memory." />
+    <meta property="og:image" content="https://grassroot.digital/images/rajesh-narwal.jpg" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://tokenlens.grassroot.digital/" />
+    <meta name="twitter:title" content="TokenLens | Privacy-First JWT Decoder & Verifier" />
+    <meta name="twitter:description" content="Decode and verify JWT signatures with native WebCrypto. Your secrets and tokens never leave your browser." />
+    <meta name="twitter:image" content="https://grassroot.digital/images/rajesh-narwal.jpg" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Schema.org JSON-LD Structured Data for Google Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebApplication",
+          "name": "TokenLens",
+          "url": "https://tokenlens.grassroot.digital",
+          "applicationCategory": "SecurityApplication",
+          "operatingSystem": "All modern browsers (WebCrypto API)",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "featureList": [
+            "100% Client-side WebCrypto cryptographic signature verification",
+            "Support for HS256, HS384, HS512, RS256, RS384, RS512, PS256, ES256, ES384, ES512",
+            "Live real-time expiration (exp), issued-at (iat), and not-before (nbf) countdown timers",
+            "Two-way header and payload claim JSON editor with instant re-signing",
+            "Side-by-side visual JWT token diff comparator",
+            "Zero telemetry and zero cloud storage promise"
+          ],
+          "author": {
+            "@type": "Person",
+            "name": "Rajesh Narwal",
+            "url": "https://grassroot.digital/#about"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Does TokenLens send my JWT tokens or secret keys to any backend server?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. TokenLens operates 100% in your browser's local memory using the native WebCrypto API (window.crypto.subtle). Your tokens, private keys, and HMAC secrets never leave your device."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which cryptographic algorithms are supported by TokenLens?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "TokenLens supports HMAC algorithms (HS256, HS384, HS512), RSA algorithms (RS256, RS384, RS512, PS256), and ECDSA elliptic curve algorithms (ES256, ES384, ES512)."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body class="bg-background text-text select-none antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

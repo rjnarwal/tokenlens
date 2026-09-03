@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+    --color-bg-primary: #0a0d14;
+    --color-bg-secondary: #101522;
+    --color-bg-tertiary: #161c2e;
+    --color-bg-elevated: #1e2538;
+    --color-border-primary: #2b3754;
+    --color-border-secondary: #1a2236;
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #cbd5e1;
+    --color-text-muted: #94a3b8;
+    --color-accent: #f97316;
+    --color-accent-hover: #ea580c;
+    --color-accent-muted: rgba(249, 115, 22, 0.15);
+
+    /* High-contrast JWT Segment Colors (Dark) */
+    --jwt-header: #fca5a5;
+    --jwt-header-bg: rgba(239, 68, 68, 0.18);
+    --jwt-header-border: rgba(239, 68, 68, 0.5);
+
+    --jwt-payload: #d8b4fe;
+    --jwt-payload-bg: rgba(168, 85, 247, 0.18);
+    --jwt-payload-border: rgba(168, 85, 247, 0.5);
+
+    --jwt-signature: #7dd3fc;
+    --jwt-signature-bg: rgba(14, 165, 233, 0.18);
+    --jwt-signature-border: rgba(14, 165, 233, 0.5);
+  }
+
+  .midnight {
+    color-scheme: dark;
+    --color-bg-primary: #060913;
+    --color-bg-secondary: #0b1120;
+    --color-bg-tertiary: #111a30;
+    --color-bg-elevated: #182442;
+    --color-border-primary: #233352;
+    --color-border-secondary: #151e2e;
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #cbd5e1;
+    --color-text-muted: #94a3b8;
+    --color-accent: #38bdf8;
+    --color-accent-hover: #0284c7;
+    --color-accent-muted: rgba(56, 189, 248, 0.15);
+
+    --jwt-header: #fca5a5;
+    --jwt-header-bg: rgba(239, 68, 68, 0.18);
+    --jwt-header-border: rgba(239, 68, 68, 0.5);
+
+    --jwt-payload: #d8b4fe;
+    --jwt-payload-bg: rgba(168, 85, 247, 0.18);
+    --jwt-payload-border: rgba(168, 85, 247, 0.5);
+
+    --jwt-signature: #7dd3fc;
+    --jwt-signature-bg: rgba(14, 165, 233, 0.18);
+    --jwt-signature-border: rgba(14, 165, 233, 0.5);
+  }
+
+  .light {
+    color-scheme: light;
+    --color-bg-primary: #f8fafc;
+    --color-bg-secondary: #ffffff;
+    --color-bg-tertiary: #e2e8f0;
+    --color-bg-elevated: #ffffff;
+    --color-border-primary: #cbd5e1;
+    --color-border-secondary: #e2e8f0;
+    --color-text-primary: #0f172a;
+    --color-text-secondary: #334155;
+    --color-text-muted: #64748b;
+    --color-accent: #ea580c;
+    --color-accent-hover: #c2410c;
+    --color-accent-muted: rgba(234, 88, 12, 0.12);
+
+    /* Deep High-Contrast JWT Colors for Light Background */
+    --jwt-header: #991b1b;
+    --jwt-header-bg: #fee2e2;
+    --jwt-header-border: #f87171;
+
+    --jwt-payload: #581c87;
+    --jwt-payload-bg: #f3e8ff;
+    --jwt-payload-border: #c084fc;
+
+    --jwt-signature: #075985;
+    --jwt-signature-bg: #e0f2fe;
+    --jwt-signature-border: #38bdf8;
+  }
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  overflow-x: hidden;
+}
+
+code, pre, .font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Explicit Form Inputs Contrast Guarantee */
+input, textarea, select {
+  color: var(--color-text-primary) !important;
+  background-color: var(--color-bg-primary) !important;
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--color-text-muted) !important;
+  opacity: 0.8 !important;
+}
+
+/* Theme-Aware JWT Utility Classes */
+.jwt-header-text {
+  color: var(--jwt-header) !important;
+}
+
+.jwt-payload-text {
+  color: var(--jwt-payload) !important;
+}
+
+.jwt-signature-text {
+  color: var(--jwt-signature) !important;
+}
+
+.jwt-header-badge {
+  color: var(--jwt-header) !important;
+  background-color: var(--jwt-header-bg) !important;
+  border: 1px solid var(--jwt-header-border) !important;
+}
+
+.jwt-payload-badge {
+  color: var(--jwt-payload) !important;
+  background-color: var(--jwt-payload-bg) !important;
+  border: 1px solid var(--jwt-payload-border) !important;
+}
+
+.jwt-signature-badge {
+  color: var(--jwt-signature) !important;
+  background-color: var(--jwt-signature-bg) !important;
+  border: 1px solid var(--jwt-signature-border) !important;
+}
+
+/* Ambient glow orb */
+.ambient-glow {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(100px);
+  pointer-events: none;
+  z-index: 0;
+}
