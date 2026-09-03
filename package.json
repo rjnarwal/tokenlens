@@ -12,6 +12,13 @@
     "preview": "vite preview",
     "typecheck": "tsc --noEmit"
   },
+  "description": "TokenLens - Privacy-First, Zero-Cloud JWT Decoder & Inspector with WebCrypto Verification",
+  "author": {
+    "name": "Rajesh Narwal",
+    "email": "rajesh@grassroot.digital",
+    "url": "https://grassroot.digital"
+  },
+  "homepage": "https://tokenlens.grassroot.digital",
   "build": {
     "appId": "digital.grassroot.tokenlens",
     "productName": "TokenLens",
@@ -34,6 +41,7 @@
     "linux": {
       "icon": "electron/icon.png",
       "category": "Development",
+      "maintainer": "Rajesh Narwal <rajesh@grassroot.digital>",
       "target": ["AppImage", "deb"]
     }
   },
