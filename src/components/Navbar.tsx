@@ -24,7 +24,7 @@ const TOKENLENS_DOWNLOAD_CONFIG: AppDownloadConfig = {
   downloads: {
     macArm: 'https://github.com/rjnarwal/tokenlens/releases/download/v1.0.0/TokenLens-1.0.0-arm64.dmg',
     macIntel: 'https://github.com/rjnarwal/tokenlens/releases/download/v1.0.0/TokenLens-1.0.0.dmg',
-    winX64: 'https://github.com/rjnarwal/tokenlens/releases/download/v1.0.0/TokenLens-Setup-1.0.0.exe',
+    winX64: 'https://github.com/rjnarwal/tokenlens/releases/download/v1.0.0/TokenLens.Setup.1.0.0.exe',
     linuxAppImage: 'https://github.com/rjnarwal/tokenlens/releases/download/v1.0.0/TokenLens-1.0.0.AppImage',
   },
 };
